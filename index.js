@@ -146,13 +146,13 @@ md5blk = function (s) {
   return md5blks;
 }
 
-var hex_chr = '0123456789abcdef'.split('');
+var hexChr = '0123456789abcdef'.split('');
 
 rhex = function (n) {
   var s = '',
     j = 0;
   for (; j < 4; j++)
-    s += hex_chr[(n >> (j * 8 + 4)) & 0x0F] + hex_chr[(n >> (j * 8)) & 0x0F];
+    s += hexChr[(n >> (j * 8 + 4)) & 0x0F] + hexChr[(n >> (j * 8)) & 0x0F];
   return s;
 }
 
